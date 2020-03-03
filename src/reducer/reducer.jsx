@@ -6,6 +6,7 @@ const iState={
 const reducer=(state = iState, action)=>{
     if(action.type==='HandleChange'){
         return{
+        	...state,
             name:action.payload
         }
     }
